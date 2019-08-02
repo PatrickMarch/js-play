@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>js play</title>
+		<link rel="stylesheet" href="styles/main.css">
+	</head>
+	<body>
+	<div class="grid">
+	    <header>
+		<h1 >js play</h1>
+		</header>
+		<div class="nested"><div><p>lorem</p></div><div><p>lorem</p></div><div><p>lorem</p></div><div><p>lorem</p></div><div><p>lorem</p></div><div><p>lorem</p></div><div><p>lorem</p></div><div><p>lorem</p></div><div><p>lorem</p></div></div>
+		<div class="form">
+		<form onsubmit="return redirect()">
+			<label >google search</label>
+
+			<textarea id="answer" type="text" row="2" cols="40" autofocus></textarea>
+				<input  type="submit" class="submit" value="Submit">
+		</form>
+		<br>
+		<form name="reverseform" action="/index.php"METHOD="POST"  onsubmit="validateForm()">Reverse Form
+    <textarea id="reverse" row="5" cols="40"> </textarea>
+		  <input type="submit" value="reverse string button" onclick="reversString(this.form)">
+		</form>
+            </div>
+		          <p id="reverseStringAnswer"></p>
+              <script>
+              'use strict';
+                /*
+				let dog = {
+					sound:'woof',talk:function()
+					{console.log(this.sound);}
+				};
+				dog.talk; //doesn't seem to work for some reason
+				let talkFunction = dog.talk;
+				talkFunction();//undefinded do to not being bound to the dog object
+				let talkFunction = dog.talk.bind(dog);//test code no idea if it will work
+                
+				function talk()
+				{console.log(this.sound);}
+				talk();
+*/
+
+		</script>
+		<div class="sidemenu"><p>STUFF</p> </div>
+		</div>
+	</body>
+</html>
+
+    

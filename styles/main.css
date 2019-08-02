@@ -1,0 +1,98 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+html
+{background-image:url(../images/abandoned-forest-hd-wallpaper-34950.jpg);
+  width:90%;
+  background-position: center;
+  background-size:auto;
+}
+
+.grid {
+  display: grid;
+  grid-auto-columns: minmax(100px, auto);
+  grid-auto-rows:minmax(100px, auto);
+  grid-gap:1em;
+  /*
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  */
+}
+/*these are just for ease of use through coloring the background*/
+header  {
+    background-image: url(../images/asphalt-beauty-colorful-237018.jpg);
+}
+.sidemenu 
+{grid-column:1/1}
+
+.nested {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  grid-auto-rows: 70px;
+  grid-gap:1em;
+}
+.nested p{color:#eee;}
+
+.nested div{
+  border:#eee 5px solid
+  padding:1em;
+}
+
+header, footer {
+  grid-column: 2 / 3;
+  //filter: opacity(.7)
+}
+.form {
+  grid-column: 2 / 4;
+  background-image:url("../images/breathtaking-calm-color-36478.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding-left:15px;
+  color: #eee;
+}
+
+/* Demo Specific Styles */
+body {
+  margin: 0 auto;
+  max-width: 56em;
+  padding: 1em 0;
+}
+
+header,
+aside,
+article,
+footer {
+  background: #eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25vh;
+}
+@media all and (max-width: 700px) {
+  aside,
+  article {
+    grid-column: 1 / 4;
+  }
+}
+
+/*
+body {
+    
+    font-family:'raleway', sans-serif; 
+    background: #f09206;
+  padding: 10px 10px 10px 10px;
+  border: .25rem solid;
+  border-color: mediumpurple;
+  
+}
+body h1
+{ background-image: url(/SS2.jpg);
+  background-repeat: no-repeat;
+  border:1px solid #00000333;
+  border-radius: 15px;
+  padding-left:4%;padding-top:10%;
+  text-align:center;
+box-shadow:5px 5px 5px #828282}
+
+form 
+{text-align:center;}
+*/
+/*../images/abandoned-forest-hd-wallpaper-34950.jpg*/
