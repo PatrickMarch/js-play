@@ -1,4 +1,4 @@
-var mySingleton = (function () {
+const mySingleton = (function () {
   // Instance stores a reference to the Singleton
   var instance;
   function init() {
